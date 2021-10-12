@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Document Number</th>
+            <th>Mobile</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let jsonData of jsonObject">
+            <td>{{ jsonData.email }}</td>
+            <td>{{ jsonData.first_name }}</td>
+            <td>{{ jsonData.last_name }}</td>
+            <td>{{ jsonData.n_document }}</td>
+            <td>{{ jsonData.phone_number }}</td>
+        </tr>
+    </tbody>
+</table>
